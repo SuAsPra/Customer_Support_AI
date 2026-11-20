@@ -1,0 +1,146 @@
+[
+  {
+    "id": "Q01",
+    "scenario": "Damaged Item on Arrival",
+    "customer_question": "My ApexPro headphones arrived today with a cracked headband and shattered box. How do I get an immediate replacement?",
+    "expected_document": "returns_and_refunds_policy.pdf",
+    "expected_section": "3. Damaged or Defective Items Upon Delivery",
+    "expected_keywords": ["damaged", "forty-eight (48) hours", "prepaid return shipping label", "replacement unit", "next-day air"],
+    "is_escalation_risk": true
+  },
+  {
+    "id": "Q02",
+    "scenario": "Delayed Refund Escalation",
+    "customer_question": "I returned my earbuds two weeks ago and tracking says you received them 12 days ago, but I still have not received my refund. This is ridiculous, where is my money?",
+    "expected_document": "returns_and_refunds_policy.pdf",
+    "expected_section": "4. Refund Processing Timelines and Delayed Refund Escalation",
+    "expected_keywords": ["ten (10) business days", "Tier-2 Finance Support", "BILLING-DELAY", "goodwill voucher", "$15"],
+    "is_escalation_risk": true
+  },
+  {
+    "id": "Q03",
+    "scenario": "Bluetooth Pairing Failure",
+    "customer_question": "My ApexPro headphones won't connect to my phone via Bluetooth. How do I factory reset them?",
+    "expected_document": "hardware_troubleshooting_guide.pdf",
+    "expected_section": "1. ApexPro Wireless Headphones: Bluetooth Pairing and Factory Reset",
+    "expected_keywords": ["factory reset", "Power button", "Volume Down", "ten (10) seconds", "flash purple"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q04",
+    "scenario": "Charging Port & LED Indicators",
+    "customer_question": "My device isn't turning on and when I plug in the USB-C cable the red light just blinks with a triple beep. What does that mean?",
+    "expected_document": "hardware_troubleshooting_guide.pdf",
+    "expected_section": "2. Battery Charging and Power Diagnostics",
+    "expected_keywords": ["blinking Red LED", "triple beep", "battery critically depleted", "USB-C", "5V/2A"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q05",
+    "scenario": "Audio Stuttering & Gaming Latency",
+    "customer_question": "There is a noticeable sound delay when playing games on my phone. Can I reduce the audio latency?",
+    "expected_document": "hardware_troubleshooting_guide.pdf",
+    "expected_section": "3. Bluetooth Audio Latency, Stuttering, and Interference",
+    "expected_keywords": ["Low Latency Gaming Mode", "Triple-tap", "45ms", "firmware"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q06",
+    "scenario": "Water Damage and IPX4 Rating",
+    "customer_question": "I accidentally dropped my ApexBuds into the swimming pool and now one earbud is silent. Will warranty replace it?",
+    "expected_document": "hardware_troubleshooting_guide.pdf",
+    "expected_section": "4. Water Resistance and Warranty Exclusions",
+    "expected_keywords": ["IPX4", "NOT waterproof", "swimming", "Liquid submersion voids the standard hardware warranty"],
+    "is_escalation_risk": true
+  },
+  {
+    "id": "Q07",
+    "scenario": "General Return Policy & Restocking Fees",
+    "customer_question": "I bought headphones 20 days ago but I don't like the color. Can I return them and do I have to pay for shipping?",
+    "expected_document": "returns_and_refunds_policy.pdf",
+    "expected_section": "1. Standard 30-Day Return Policy",
+    "expected_keywords": ["thirty (30) calendar days", "original packaging", "buyer's remorse", "$6.99", "deducted"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q08",
+    "scenario": "Non-Returnable Hygiene Items",
+    "customer_question": "Can I return ApexBuds Pro in-ear earbuds after opening the seal on the box to try them out?",
+    "expected_document": "returns_and_refunds_policy.pdf",
+    "expected_section": "2. Non-Returnable and Excluded Items",
+    "expected_keywords": ["hygiene", "in-ear earphones", "protective hygienic seal", "opened or broken", "cannot be returned"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q09",
+    "scenario": "Billing Dispute - Duplicate Charges",
+    "customer_question": "My bank statement shows two completed charges of $199 for the same order! I demand an immediate reversal of the extra charge.",
+    "expected_document": "billing_and_warranty_faq.pdf",
+    "expected_section": "1. Billing Inquiries, Double Charges, and Authorization Holds",
+    "expected_keywords": ["duplicate completed charges", "Billing Specialist Team", "immediate refund", "24 hours"],
+    "is_escalation_risk": true
+  },
+  {
+    "id": "Q10",
+    "scenario": "Pending Authorization Hold",
+    "customer_question": "Why does my credit card show a pending hold after my order failed with an error at checkout?",
+    "expected_document": "billing_and_warranty_faq.pdf",
+    "expected_section": "1. Billing Inquiries, Double Charges, and Authorization Holds",
+    "expected_keywords": ["pre-authorization hold", "pending transactions", "three to five (3-5) business days", "drop off automatically"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q11",
+    "scenario": "Warranty Coverage Terms",
+    "customer_question": "My speaker driver stopped working after 6 months of normal use. Is this covered under your manufacturer warranty?",
+    "expected_document": "billing_and_warranty_faq.pdf",
+    "expected_section": "3. One-Year Limited Manufacturer Warranty",
+    "expected_keywords": ["one (1) year limited manufacturer warranty", "speaker driver failure", "materials and workmanship", "replacement unit"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q12",
+    "scenario": "Price Match / Adjustment",
+    "customer_question": "I purchased an item a week ago for $150 and today it went on sale on your website for $120. Can I get a refund for the difference?",
+    "expected_document": "billing_and_warranty_faq.pdf",
+    "expected_section": "4. 14-Day Price Adjustment Guarantee",
+    "expected_keywords": ["fourteen (14) days", "price difference", "Price adjustments apply to official ApexGear sales"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q13",
+    "scenario": "Shipping Delivery Times and Costs",
+    "customer_question": "How long does standard shipping take and how much do I need to spend to get free delivery?",
+    "expected_document": "shipping_and_delivery_policy.pdf",
+    "expected_section": "1. Shipping Methods, Costs, and Delivery Times",
+    "expected_keywords": ["Standard Shipping", "3 to 5 business days", "Free on orders above $50", "$4.99"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q14",
+    "scenario": "Carrier Tracking Scan Lag",
+    "customer_question": "I got an email yesterday that my order shipped, but when I click the tracking number it says label created and no details are shown.",
+    "expected_document": "shipping_and_delivery_policy.pdf",
+    "expected_section": "2. Order Tracking and Carrier Scans",
+    "expected_keywords": ["twenty-four (24) to forty-eight (48) hours", "initial tracking scans", "sorting hubs"],
+    "is_escalation_risk": false
+  },
+  {
+    "id": "Q15",
+    "scenario": "Stolen or Missing Delivered Package",
+    "customer_question": "Courier marked my order as delivered this morning, but there is no package on my porch. What do I do if someone stole it?",
+    "expected_document": "shipping_and_delivery_policy.pdf",
+    "expected_section": "3. Lost Shipments, Stolen Packages, and Signature Requirements",
+    "expected_keywords": ["forty-eight (48) hours", "Lost In Transit Claim", "signature", "replacement shipment", "refund"],
+    "is_escalation_risk": true
+  },
+  {
+    "id": "Q16",
+    "scenario": "Address Change Cutoff",
+    "customer_question": "I placed an order an hour ago but just realized my old apartment address is on it. Can I update the shipping address?",
+    "expected_document": "shipping_and_delivery_policy.pdf",
+    "expected_section": "4. Modifying Shipping Addresses and Order Cancellations",
+    "expected_keywords": ["two (2) hours", "shipping addresses can only be changed", "Cancel Order"],
+    "is_escalation_risk": false
+  }
+]
