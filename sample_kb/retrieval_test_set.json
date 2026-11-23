@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "question": "I forgot my password, how do I reset it?",
+    "expected_document": "faq.md",
+    "expected_section": "Account and Login",
+    "notes": "Password reset flow"
+  },
+  {
+    "id": 2,
+    "question": "I was charged twice for my subscription. What should I do?",
+    "expected_document": "refund_policy.md",
+    "expected_section": "Duplicate or Incorrect Charges",
+    "notes": "Billing dispute duplicate charge"
+  },
+  {
+    "id": 3,
+    "question": "When will I get a refund to my card?",
+    "expected_document": "refund_policy.md",
+    "expected_section": "Refund Timelines",
+    "notes": "Refund timeline by payment method"
+  },
+  {
+    "id": 4,
+    "question": "How long do I have to return an item?",
+    "expected_document": "refund_policy.md",
+    "expected_section": "Returns Eligibility",
+    "notes": "30 day return window"
+  },
+  {
+    "id": 5,
+    "question": "I received the wrong item. What should I do?",
+    "expected_document": "faq.md",
+    "expected_section": "Orders and Tracking",
+    "notes": "Wrong item resolution"
+  },
+  {
+    "id": 6,
+    "question": "The tracking says delivered but I didn't get my package.",
+    "expected_document": "shipping_and_delivery.md",
+    "expected_section": "Delayed or Missing Packages",
+    "notes": "Delivered but missing procedure"
+  },
+  {
+    "id": 7,
+    "question": "My package arrived damaged. How do I report it?",
+    "expected_document": "shipping_and_delivery.md",
+    "expected_section": "Damaged Packages",
+    "notes": "Damage reporting"
+  },
+  {
+    "id": 8,
+    "question": "I want to change my shipping address after ordering.",
+    "expected_document": "faq.md",
+    "expected_section": "Orders and Tracking",
+    "notes": "Address change before shipment"
+  },
+  {
+    "id": 9,
+    "question": "Payment failed but money was deducted from my account.",
+    "expected_document": "faq.md",
+    "expected_section": "Payments",
+    "notes": "Pending authorization"
+  },
+  {
+    "id": 10,
+    "question": "I need to cancel my order before it ships.",
+    "expected_document": "refund_policy.md",
+    "expected_section": "Cancellations",
+    "notes": "Cancel before shipment full refund"
+  },
+  {
+    "id": 11,
+    "question": "My app crashes and won't open.",
+    "expected_document": "troubleshooting.md",
+    "expected_section": "App and Website Issues",
+    "notes": "App troubleshooting steps"
+  },
+  {
+    "id": 12,
+    "question": "I'm not receiving the OTP or password reset email.",
+    "expected_document": "troubleshooting.md",
+    "expected_section": "Login and Verification",
+    "notes": "Email delivery troubleshooting"
+  },
+  {
+    "id": 13,
+    "question": "My promo code isn't working at checkout.",
+    "expected_document": "troubleshooting.md",
+    "expected_section": "Promo Codes and Discounts",
+    "notes": "Promo code issues"
+  },
+  {
+    "id": 14,
+    "question": "I was billed after cancelling my subscription.",
+    "expected_document": "troubleshooting.md",
+    "expected_section": "Subscription Issues",
+    "notes": "Post-cancellation billing"
+  },
+  {
+    "id": 15,
+    "question": "When do I need to escalate to a supervisor?",
+    "expected_document": "troubleshooting.md",
+    "expected_section": "When to Escalate",
+    "notes": "Escalation criteria"
+  }
+]
