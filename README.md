@@ -66,7 +66,7 @@ An AI platform that coaches support agents during live text-based conversations.
 
 ## Prerequisites
 
-- **Python** 3.11+ (recommended)
+- **Python** 3.11 or 3.12 (recommended; the pinned dependencies are not validated with Python 3.14)
 - **Git**
 - **pip** and virtual environment support
 - **Internet access** on first run to download the local embedding model (`sentence-transformers/all-MiniLM-L6-v2`) unless cached
@@ -78,21 +78,23 @@ An AI platform that coaches support agents during live text-based conversations.
    ```powershell
    cd C:\Customer_Service_AI
    ```
-2. **Create and activate a virtual environment**
+2. **Create and activate a Python 3.12 virtual environment**
    - Windows (PowerShell):
      ```powershell
-     python -m venv .venv
+     py -3.12 -m venv .venv
      .\.venv\Scripts\Activate.ps1
      ```
    - macOS/Linux:
      ```bash
-     python3 -m venv .venv
+     python3.12 -m venv .venv
      source .venv/bin/activate
      ```
 3. **Install backend dependencies**
    ```bash
-   pip install -r backend/requirements.txt
+   python -m pip install --upgrade pip
+   python -m pip install -r backend/requirements.txt
    ```
+   On Windows with Python 3.12, `chroma-hnswlib` may need Microsoft C++ Build Tools to build its native extension. Python 3.11 has a prebuilt Windows wheel for the pinned version.
 4. **Create environment file**
    ```powershell
    copy .env.example .env
@@ -214,7 +216,8 @@ Supporting artifacts: `docs/design_document.md`, `docs/research/*`, `docs/retrie
 |---|---|---|
 | `ModuleNotFoundError: app` when starting | Run from wrong directory or missing `--app-dir` | Run from repo root: `uvicorn app.main:app --app-dir backend ...` |
 | First upload/index is slow or hangs | Downloading embedding model | Wait for `all-MiniLM-L6-v2` download; ensure internet on first run |
-| `sentence-transformers`/torch install issues on Windows | Heavy deps/build issues | Use Python 3.11, upgrade pip (`python -m pip install -U pip`), install CPU wheels; retry install |
+| `pydantic_core._pydantic_core` import error | The virtual environment was created with a different Python version than the installed native wheel | Recreate the environment explicitly with `py -3.12 -m venv .venv` (or `py -3.11`) and reinstall requirements |
+| `sentence-transformers`/torch install issues on Windows | Heavy deps/build issues | Use Python 3.11 or 3.12, upgrade pip (`python -m pip install -U pip`), install CPU wheels; retry install |
 | PDF upload returns "No extractable text" or fails | Scanned/image PDF or complex layout | Use text-based PDFs or `.md/.txt`; OCR not included in M1 |
 | Retrieval returns empty results | No documents indexed or query mismatch | Check `GET /api/kb/documents` for `indexed` status and `chunk_count > 0`; reindex if needed |
 | `Unsupported file type` | Extension not allowed | Only `.pdf`, `.txt`, `.md` supported |
