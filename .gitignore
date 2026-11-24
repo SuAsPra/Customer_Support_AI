@@ -2,33 +2,32 @@
 __pycache__/
 *.py[cod]
 *$py.class
-.venv/
-venv/
+*.so
+.Python
 env/
-.pytest_cache/
+venv/
+.venv/
+ENV/
+
+# Project storage
+chroma_storage/
+test_chroma/
+*.db
+*.sqlite3
 
 # Environment
 .env
-.env.*
-!.env.example
+.env.local
 
 # IDE
 .vscode/
 .idea/
+*.swp
 
-# Data / runtime
-data/
-*.sqlite3
-*.db
-chroma_db/
-uploads/
-vector_store/
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Node
-node_modules/
-dist/
-build/
+# Logs
+*.log
